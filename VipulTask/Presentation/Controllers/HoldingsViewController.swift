@@ -84,7 +84,28 @@ final class HoldingsViewController: UIViewController {
                 self.summaryView.configure(summary: summary)
             }
         }
+        
+        viewModel.onError = { [weak self] message in
+            guard let self else { return }
+            self.showErrorAlert(message: message)
+        }
     }
+    
+    private func showErrorAlert(message: String) {
+
+        let alert = UIAlertController(
+            title: "Error",
+            message: message,
+            preferredStyle: .alert
+        )
+
+        alert.addAction(
+            UIAlertAction(title: "OK", style: .default)
+        )
+
+        present(alert, animated: true)
+    }
+
 }
 
 // MARK: - UITableViewDataSource

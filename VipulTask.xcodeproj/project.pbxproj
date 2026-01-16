@@ -29,6 +29,8 @@
 		92FDB28E2F1939AC0013BE43 /* PortfolioCalculationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDB28D2F1939AC0013BE43 /* PortfolioCalculationTests.swift */; };
 		92FDB2902F194FAF0013BE43 /* HoldingsResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDB28F2F194FAF0013BE43 /* HoldingsResponseDTO.swift */; };
 		92FDB2922F1977DF0013BE43 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDB2912F1977DF0013BE43 /* AppNavigationController.swift */; };
+		92FFCF522F1A321B008CB2FD /* HoldingDTOMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FFCF512F1A321B008CB2FD /* HoldingDTOMappingTests.swift */; };
+		92FFCF542F1A324F008CB2FD /* MockPortfolioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FFCF532F1A324F008CB2FD /* MockPortfolioService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		92FDB28D2F1939AC0013BE43 /* PortfolioCalculationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioCalculationTests.swift; sourceTree = "<group>"; };
 		92FDB28F2F194FAF0013BE43 /* HoldingsResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldingsResponseDTO.swift; sourceTree = "<group>"; };
 		92FDB2912F1977DF0013BE43 /* AppNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
+		92FFCF512F1A321B008CB2FD /* HoldingDTOMappingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldingDTOMappingTests.swift; sourceTree = "<group>"; };
+		92FFCF532F1A324F008CB2FD /* MockPortfolioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPortfolioService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +262,8 @@
 			children = (
 				92FDB28B2F1939900013BE43 /* HoldingsViewModelTests.swift */,
 				92FDB28D2F1939AC0013BE43 /* PortfolioCalculationTests.swift */,
+				92FFCF512F1A321B008CB2FD /* HoldingDTOMappingTests.swift */,
+				92FFCF532F1A324F008CB2FD /* MockPortfolioService.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -416,7 +422,9 @@
 			files = (
 				92FDB28C2F1939900013BE43 /* HoldingsViewModelTests.swift in Sources */,
 				92FDB28E2F1939AC0013BE43 /* PortfolioCalculationTests.swift in Sources */,
+				92FFCF522F1A321B008CB2FD /* HoldingDTOMappingTests.swift in Sources */,
 				92FDB24A2F192BED0013BE43 /* VipulTaskTests.swift in Sources */,
+				92FFCF542F1A324F008CB2FD /* MockPortfolioService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

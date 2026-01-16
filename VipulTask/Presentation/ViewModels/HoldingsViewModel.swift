@@ -16,6 +16,7 @@ final class HoldingsViewModel {
     private(set) var summary: PortfolioSummary?
 
     var onUpdate: (() -> Void)?
+    var onError: ((String) -> Void)?
 
     init(service: PortfolioServiceProtocol = PortfolioService()) {
         self.service = service
@@ -25,10 +26,14 @@ final class HoldingsViewModel {
         service.fetchHoldings { [weak self] result in
             DispatchQueue.main.async {
                 guard let self else { return }
-                if case .success(let holdings) = result {
-                    self.holdings = holdings
-                    self.summary = self.calculator.execute(holdings: holdings)
-                    self.onUpdate?()
+                switch result {
+                            case .success(let holdings):
+                                self.holdings = holdings
+                                self.summary = self.calculator.execute(holdings: holdings)
+                                self.onUpdate?()
+
+                            case .failure:
+                                self.onError?("Failed to load holdings")
                 }
             }
         }
