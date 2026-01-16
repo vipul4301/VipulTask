@@ -9,7 +9,7 @@ import Foundation
 
 enum Endpoint {
     case holdings
-
+    
     var url: URL {
         switch self {
         case .holdings:

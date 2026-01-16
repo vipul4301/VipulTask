@@ -12,10 +12,10 @@ protocol PortfolioServiceProtocol {
 }
 
 final class PortfolioService: PortfolioServiceProtocol {
-
+    
     private let client: APIClientProtocol
     private let cache: HoldingsCacheProtocol
-
+    
     init(
         client: APIClientProtocol = APIClient(),
         cache: HoldingsCacheProtocol = HoldingsCache()
@@ -23,7 +23,7 @@ final class PortfolioService: PortfolioServiceProtocol {
         self.client = client
         self.cache = cache
     }
-
+    
     func fetchHoldings(completion: @escaping (Result<[Holding], Error>) -> Void) {
         
         client.get(url: Endpoint.holdings.url) { (result: Result<HoldingsResponseDTO, Error>) in
@@ -32,15 +32,15 @@ final class PortfolioService: PortfolioServiceProtocol {
                 let holdings = response.data.userHolding.map { $0.toDomain() }
                 self.cache.save(holdings)
                 completion(.success(holdings))
-
+                
             case .failure(let error):
                 let cached = self.cache.load()
                 cached.isEmpty
-                    ? completion(.failure(error))
-                    : completion(.success(cached))
+                ? completion(.failure(error))
+                : completion(.success(cached))
             }
         }
-
+        
     }
 }
 

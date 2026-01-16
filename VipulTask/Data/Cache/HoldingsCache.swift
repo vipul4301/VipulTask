@@ -13,9 +13,9 @@ protocol HoldingsCacheProtocol {
 }
 
 final class HoldingsCache: HoldingsCacheProtocol {
-
+    
     private let key = "holdings_cache"
-
+    
     func save(_ holdings: [Holding]) {
         let data = holdings.map {
             [
@@ -28,11 +28,11 @@ final class HoldingsCache: HoldingsCacheProtocol {
         }
         UserDefaults.standard.set(data, forKey: key)
     }
-
+    
     func load() -> [Holding] {
         guard let raw = UserDefaults.standard.array(forKey: key) as? [[String: Any]]
         else { return [] }
-
+        
         return raw.compactMap {
             guard
                 let symbol = $0["symbol"] as? String,
@@ -41,7 +41,7 @@ final class HoldingsCache: HoldingsCacheProtocol {
                 let avgPrice = $0["avgPrice"] as? Double,
                 let close = $0["close"] as? Double
             else { return nil }
-
+            
             return Holding(
                 symbol: symbol,
                 quantity: quantity,

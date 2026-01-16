@@ -15,7 +15,7 @@ protocol APIClientProtocol {
 }
 
 final class APIClient: APIClientProtocol {
-
+    
     func get<T: Decodable>(
         url: URL,
         completion: @escaping (Result<T, Error>) -> Void
@@ -25,9 +25,9 @@ final class APIClient: APIClientProtocol {
                 completion(.failure(error))
                 return
             }
-
+            
             guard let data else { return }
-
+            
             do {
                 completion(.success(try JSONDecoder().decode(T.self, from: data)))
             } catch {
