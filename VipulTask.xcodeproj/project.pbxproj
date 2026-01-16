@@ -1,0 +1,750 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		92FDB2332F192BE90013BE43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDB2322F192BE90013BE43 /* AppDelegate.swift */; };
+		92FDB2352F192BE90013BE43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDB2342F192BE90013BE43 /* SceneDelegate.swift */; };
+		92FDB23C2F192BED0013BE43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92FDB23B2F192BED0013BE43 /* Assets.xcassets */; };
+		92FDB23F2F192BED0013BE43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92FDB23D2F192BED0013BE43 /* LaunchScreen.storyboard */; };
+		92FDB24A2F192BED0013BE43 /* VipulTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDB2492F192BED0013BE43 /* VipulTaskTests.swift */; };
+		92FDB2542F192BEE0013BE43 /* VipulTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDB2532F192BEE0013BE43 /* VipulTaskUITests.swift */; };
+		92FDB2562F192BEE0013BE43 /* VipulTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDB2552F192BEE0013BE43 /* VipulTaskUITestsLaunchTests.swift */; };
+		92FDB2692F192F7A0013BE43 /* Holding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDB2632F192F7A0013BE43 /* Holding.swift */; };
+		92FDB26A2F192F7A0013BE43 /* HoldingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDB2662F192F7A0013BE43 /* HoldingsViewModel.swift */; };
+		92FDB26B2F192F7A0013BE43 /* HoldingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDB2682F192F7A0013BE43 /* HoldingsViewController.swift */; };
+		92FDB2722F19322B0013BE43 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDB2712F19322B0013BE43 /* APIClient.swift */; };
+		92FDB2742F19323C0013BE43 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDB2732F19323C0013BE43 /* Endpoint.swift */; };
+		92FDB2762F1932460013BE43 /* PortfolioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDB2752F1932460013BE43 /* PortfolioService.swift */; };
+		92FDB2782F1932510013BE43 /* HoldingDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDB2772F1932510013BE43 /* HoldingDTO.swift */; };
+		92FDB27C2F1932650013BE43 /* HoldingsCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDB27B2F1932650013BE43 /* HoldingsCache.swift */; };
+		92FDB2802F1935B70013BE43 /* CalculatePortfolioUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDB27F2F1935B70013BE43 /* CalculatePortfolioUseCase.swift */; };
+		92FDB2852F19394A0013BE43 /* HoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDB2842F19394A0013BE43 /* HoldingCell.swift */; };
+		92FDB2872F1939540013BE43 /* PortfolioSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDB2862F1939540013BE43 /* PortfolioSummaryView.swift */; };
+		92FDB28C2F1939900013BE43 /* HoldingsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDB28B2F1939900013BE43 /* HoldingsViewModelTests.swift */; };
+		92FDB28E2F1939AC0013BE43 /* PortfolioCalculationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDB28D2F1939AC0013BE43 /* PortfolioCalculationTests.swift */; };
+		92FDB2902F194FAF0013BE43 /* HoldingsResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDB28F2F194FAF0013BE43 /* HoldingsResponseDTO.swift */; };
+		92FDB2922F1977DF0013BE43 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDB2912F1977DF0013BE43 /* AppNavigationController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92FDB2462F192BED0013BE43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92FDB2272F192BE90013BE43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92FDB22E2F192BE90013BE43;
+			remoteInfo = VipulTask;
+		};
+		92FDB2502F192BEE0013BE43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92FDB2272F192BE90013BE43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92FDB22E2F192BE90013BE43;
+			remoteInfo = VipulTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		92FDB22F2F192BE90013BE43 /* VipulTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VipulTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92FDB2322F192BE90013BE43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		92FDB2342F192BE90013BE43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		92FDB23B2F192BED0013BE43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92FDB23E2F192BED0013BE43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		92FDB2402F192BED0013BE43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92FDB2452F192BED0013BE43 /* VipulTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VipulTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92FDB2492F192BED0013BE43 /* VipulTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VipulTaskTests.swift; sourceTree = "<group>"; };
+		92FDB24F2F192BEE0013BE43 /* VipulTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VipulTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92FDB2532F192BEE0013BE43 /* VipulTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VipulTaskUITests.swift; sourceTree = "<group>"; };
+		92FDB2552F192BEE0013BE43 /* VipulTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VipulTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		92FDB2632F192F7A0013BE43 /* Holding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Holding.swift; sourceTree = "<group>"; };
+		92FDB2662F192F7A0013BE43 /* HoldingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoldingsViewModel.swift; sourceTree = "<group>"; };
+		92FDB2682F192F7A0013BE43 /* HoldingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoldingsViewController.swift; sourceTree = "<group>"; };
+		92FDB2712F19322B0013BE43 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		92FDB2732F19323C0013BE43 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		92FDB2752F1932460013BE43 /* PortfolioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioService.swift; sourceTree = "<group>"; };
+		92FDB2772F1932510013BE43 /* HoldingDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldingDTO.swift; sourceTree = "<group>"; };
+		92FDB27B2F1932650013BE43 /* HoldingsCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldingsCache.swift; sourceTree = "<group>"; };
+		92FDB27F2F1935B70013BE43 /* CalculatePortfolioUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatePortfolioUseCase.swift; sourceTree = "<group>"; };
+		92FDB2842F19394A0013BE43 /* HoldingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldingCell.swift; sourceTree = "<group>"; };
+		92FDB2862F1939540013BE43 /* PortfolioSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioSummaryView.swift; sourceTree = "<group>"; };
+		92FDB28B2F1939900013BE43 /* HoldingsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldingsViewModelTests.swift; sourceTree = "<group>"; };
+		92FDB28D2F1939AC0013BE43 /* PortfolioCalculationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioCalculationTests.swift; sourceTree = "<group>"; };
+		92FDB28F2F194FAF0013BE43 /* HoldingsResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldingsResponseDTO.swift; sourceTree = "<group>"; };
+		92FDB2912F1977DF0013BE43 /* AppNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92FDB22C2F192BE90013BE43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92FDB2422F192BED0013BE43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92FDB24C2F192BEE0013BE43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92FDB2262F192BE80013BE43 = {
+			isa = PBXGroup;
+			children = (
+				92FDB2312F192BE90013BE43 /* VipulTask */,
+				92FDB2482F192BED0013BE43 /* VipulTaskTests */,
+				92FDB2522F192BEE0013BE43 /* VipulTaskUITests */,
+				92FDB2302F192BE90013BE43 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		92FDB2302F192BE90013BE43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92FDB22F2F192BE90013BE43 /* VipulTask.app */,
+				92FDB2452F192BED0013BE43 /* VipulTaskTests.xctest */,
+				92FDB24F2F192BEE0013BE43 /* VipulTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92FDB2312F192BE90013BE43 /* VipulTask */ = {
+			isa = PBXGroup;
+			children = (
+				92FDB26C2F1931DC0013BE43 /* Data */,
+				92FDB2622F192F7A0013BE43 /* Domain */,
+				92FDB2642F192F7A0013BE43 /* Presentation */,
+				92FDB2322F192BE90013BE43 /* AppDelegate.swift */,
+				92FDB2342F192BE90013BE43 /* SceneDelegate.swift */,
+				92FDB23B2F192BED0013BE43 /* Assets.xcassets */,
+				92FDB23D2F192BED0013BE43 /* LaunchScreen.storyboard */,
+				92FDB2402F192BED0013BE43 /* Info.plist */,
+				92FDB2912F1977DF0013BE43 /* AppNavigationController.swift */,
+			);
+			path = VipulTask;
+			sourceTree = "<group>";
+		};
+		92FDB2482F192BED0013BE43 /* VipulTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				92FDB28A2F1939820013BE43 /* Tests */,
+				92FDB2492F192BED0013BE43 /* VipulTaskTests.swift */,
+			);
+			path = VipulTaskTests;
+			sourceTree = "<group>";
+		};
+		92FDB2522F192BEE0013BE43 /* VipulTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				92FDB2532F192BEE0013BE43 /* VipulTaskUITests.swift */,
+				92FDB2552F192BEE0013BE43 /* VipulTaskUITestsLaunchTests.swift */,
+			);
+			path = VipulTaskUITests;
+			sourceTree = "<group>";
+		};
+		92FDB2622F192F7A0013BE43 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				92FDB27E2F19359F0013BE43 /* UseCases */,
+				92FDB27D2F1935820013BE43 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		92FDB2642F192F7A0013BE43 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				92FDB2832F19393D0013BE43 /* Views */,
+				92FDB2652F192F7A0013BE43 /* ViewModels */,
+				92FDB2672F192F7A0013BE43 /* Controllers */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		92FDB2652F192F7A0013BE43 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				92FDB2662F192F7A0013BE43 /* HoldingsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		92FDB2672F192F7A0013BE43 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				92FDB2682F192F7A0013BE43 /* HoldingsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		92FDB26C2F1931DC0013BE43 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				92FDB2702F1932150013BE43 /* Cache */,
+				92FDB26E2F1932030013BE43 /* DTO */,
+				92FDB26D2F1931E60013BE43 /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		92FDB26D2F1931E60013BE43 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				92FDB2712F19322B0013BE43 /* APIClient.swift */,
+				92FDB2732F19323C0013BE43 /* Endpoint.swift */,
+				92FDB2752F1932460013BE43 /* PortfolioService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		92FDB26E2F1932030013BE43 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				92FDB2772F1932510013BE43 /* HoldingDTO.swift */,
+				92FDB28F2F194FAF0013BE43 /* HoldingsResponseDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		92FDB2702F1932150013BE43 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				92FDB27B2F1932650013BE43 /* HoldingsCache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		92FDB27D2F1935820013BE43 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				92FDB2632F192F7A0013BE43 /* Holding.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		92FDB27E2F19359F0013BE43 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				92FDB27F2F1935B70013BE43 /* CalculatePortfolioUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		92FDB2832F19393D0013BE43 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92FDB2842F19394A0013BE43 /* HoldingCell.swift */,
+				92FDB2862F1939540013BE43 /* PortfolioSummaryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		92FDB28A2F1939820013BE43 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				92FDB28B2F1939900013BE43 /* HoldingsViewModelTests.swift */,
+				92FDB28D2F1939AC0013BE43 /* PortfolioCalculationTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92FDB22E2F192BE90013BE43 /* VipulTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92FDB2592F192BEE0013BE43 /* Build configuration list for PBXNativeTarget "VipulTask" */;
+			buildPhases = (
+				92FDB22B2F192BE90013BE43 /* Sources */,
+				92FDB22C2F192BE90013BE43 /* Frameworks */,
+				92FDB22D2F192BE90013BE43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VipulTask;
+			productName = VipulTask;
+			productReference = 92FDB22F2F192BE90013BE43 /* VipulTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92FDB2442F192BED0013BE43 /* VipulTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92FDB25C2F192BEE0013BE43 /* Build configuration list for PBXNativeTarget "VipulTaskTests" */;
+			buildPhases = (
+				92FDB2412F192BED0013BE43 /* Sources */,
+				92FDB2422F192BED0013BE43 /* Frameworks */,
+				92FDB2432F192BED0013BE43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92FDB2472F192BED0013BE43 /* PBXTargetDependency */,
+			);
+			name = VipulTaskTests;
+			productName = VipulTaskTests;
+			productReference = 92FDB2452F192BED0013BE43 /* VipulTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		92FDB24E2F192BEE0013BE43 /* VipulTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92FDB25F2F192BEE0013BE43 /* Build configuration list for PBXNativeTarget "VipulTaskUITests" */;
+			buildPhases = (
+				92FDB24B2F192BEE0013BE43 /* Sources */,
+				92FDB24C2F192BEE0013BE43 /* Frameworks */,
+				92FDB24D2F192BEE0013BE43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92FDB2512F192BEE0013BE43 /* PBXTargetDependency */,
+			);
+			name = VipulTaskUITests;
+			productName = VipulTaskUITests;
+			productReference = 92FDB24F2F192BEE0013BE43 /* VipulTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92FDB2272F192BE90013BE43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					92FDB22E2F192BE90013BE43 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					92FDB2442F192BED0013BE43 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 92FDB22E2F192BE90013BE43;
+					};
+					92FDB24E2F192BEE0013BE43 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 92FDB22E2F192BE90013BE43;
+					};
+				};
+			};
+			buildConfigurationList = 92FDB22A2F192BE90013BE43 /* Build configuration list for PBXProject "VipulTask" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 92FDB2262F192BE80013BE43;
+			productRefGroup = 92FDB2302F192BE90013BE43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92FDB22E2F192BE90013BE43 /* VipulTask */,
+				92FDB2442F192BED0013BE43 /* VipulTaskTests */,
+				92FDB24E2F192BEE0013BE43 /* VipulTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92FDB22D2F192BE90013BE43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92FDB23F2F192BED0013BE43 /* LaunchScreen.storyboard in Resources */,
+				92FDB23C2F192BED0013BE43 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92FDB2432F192BED0013BE43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92FDB24D2F192BEE0013BE43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92FDB22B2F192BE90013BE43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92FDB26A2F192F7A0013BE43 /* HoldingsViewModel.swift in Sources */,
+				92FDB2722F19322B0013BE43 /* APIClient.swift in Sources */,
+				92FDB27C2F1932650013BE43 /* HoldingsCache.swift in Sources */,
+				92FDB2742F19323C0013BE43 /* Endpoint.swift in Sources */,
+				92FDB2802F1935B70013BE43 /* CalculatePortfolioUseCase.swift in Sources */,
+				92FDB2782F1932510013BE43 /* HoldingDTO.swift in Sources */,
+				92FDB2692F192F7A0013BE43 /* Holding.swift in Sources */,
+				92FDB2902F194FAF0013BE43 /* HoldingsResponseDTO.swift in Sources */,
+				92FDB2332F192BE90013BE43 /* AppDelegate.swift in Sources */,
+				92FDB2762F1932460013BE43 /* PortfolioService.swift in Sources */,
+				92FDB2852F19394A0013BE43 /* HoldingCell.swift in Sources */,
+				92FDB2872F1939540013BE43 /* PortfolioSummaryView.swift in Sources */,
+				92FDB26B2F192F7A0013BE43 /* HoldingsViewController.swift in Sources */,
+				92FDB2352F192BE90013BE43 /* SceneDelegate.swift in Sources */,
+				92FDB2922F1977DF0013BE43 /* AppNavigationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92FDB2412F192BED0013BE43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92FDB28C2F1939900013BE43 /* HoldingsViewModelTests.swift in Sources */,
+				92FDB28E2F1939AC0013BE43 /* PortfolioCalculationTests.swift in Sources */,
+				92FDB24A2F192BED0013BE43 /* VipulTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92FDB24B2F192BEE0013BE43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92FDB2562F192BEE0013BE43 /* VipulTaskUITestsLaunchTests.swift in Sources */,
+				92FDB2542F192BEE0013BE43 /* VipulTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92FDB2472F192BED0013BE43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92FDB22E2F192BE90013BE43 /* VipulTask */;
+			targetProxy = 92FDB2462F192BED0013BE43 /* PBXContainerItemProxy */;
+		};
+		92FDB2512F192BEE0013BE43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92FDB22E2F192BE90013BE43 /* VipulTask */;
+			targetProxy = 92FDB2502F192BEE0013BE43 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		92FDB23D2F192BED0013BE43 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92FDB23E2F192BED0013BE43 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		92FDB2572F192BEE0013BE43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		92FDB2582F192BEE0013BE43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92FDB25A2F192BEE0013BE43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XNZF4JCN2R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VipulTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vipul.VipulTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92FDB25B2F192BEE0013BE43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XNZF4JCN2R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VipulTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vipul.VipulTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		92FDB25D2F192BEE0013BE43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XNZF4JCN2R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vipul.VipulTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VipulTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VipulTask";
+			};
+			name = Debug;
+		};
+		92FDB25E2F192BEE0013BE43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XNZF4JCN2R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vipul.VipulTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VipulTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VipulTask";
+			};
+			name = Release;
+		};
+		92FDB2602F192BEE0013BE43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XNZF4JCN2R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vipul.VipulTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VipulTask;
+			};
+			name = Debug;
+		};
+		92FDB2612F192BEE0013BE43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XNZF4JCN2R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vipul.VipulTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VipulTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92FDB22A2F192BE90013BE43 /* Build configuration list for PBXProject "VipulTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92FDB2572F192BEE0013BE43 /* Debug */,
+				92FDB2582F192BEE0013BE43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92FDB2592F192BEE0013BE43 /* Build configuration list for PBXNativeTarget "VipulTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92FDB25A2F192BEE0013BE43 /* Debug */,
+				92FDB25B2F192BEE0013BE43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92FDB25C2F192BEE0013BE43 /* Build configuration list for PBXNativeTarget "VipulTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92FDB25D2F192BEE0013BE43 /* Debug */,
+				92FDB25E2F192BEE0013BE43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92FDB25F2F192BEE0013BE43 /* Build configuration list for PBXNativeTarget "VipulTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92FDB2602F192BEE0013BE43 /* Debug */,
+				92FDB2612F192BEE0013BE43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92FDB2272F192BE90013BE43 /* Project object */;
+}
